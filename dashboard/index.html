@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Radar — pre-token protocols ranked by implied value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<a class="skip" href="#board">Skip to the board</a>
+<header class="top">
+  <div class="brand">
+    <span class="pulse" aria-hidden="true"></span>
+    <div>
+      <h1>Token Radar</h1>
+      <p class="tag">Pre-token protocols, ranked by what their launch would be worth.</p>
+    </div>
+  </div>
+  <dl class="stats" id="stats" aria-label="Board statistics"></dl>
+</header>
+<nav class="tabs" aria-label="Views">
+  <button type="button" data-tab="board" aria-pressed="true">Board</button>
+  <button type="button" data-tab="live" aria-pressed="false">Live tokens</button>
+  <button type="button" data-tab="model" aria-pressed="false">Model &amp; benchmarks</button>
+</nav>
+<main id="board" tabindex="-1" aria-busy="true">
+  <section id="controls" class="controls" aria-label="Filter and sort the board"></section>
+  <section id="panel" class="panel" aria-live="polite"></section>
+</main>
+<footer class="foot">
+  <p id="method"></p>
+  <p>Snapshot: DefiLlama protocols, fetched 2026-11-14. A protocol on this board <em>records</em> no token in that snapshot — the snapshot is DefiLlama's record, not proof it has none. Implied values are this radar's own claim, never a promise a token will launch or what it will be worth. Nothing here is financial advice.</p>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
